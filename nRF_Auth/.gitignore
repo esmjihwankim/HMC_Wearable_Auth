@@ -1,0 +1,10 @@
+# BSPWon_nRF52
+
+#Firmware
+output/
+
+#Algorithms 
+.vs/Acceperometer_Swing_Detection/
+x64/
+*.vcxproj
+*.xlsx
