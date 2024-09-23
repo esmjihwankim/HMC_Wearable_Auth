@@ -4,6 +4,10 @@
 nrf_crypto_ecc_private_key_t private_key;
 nrf_crypto_ecc_public_key_t public_key; 
 
+const char* common_name = "Hyundai_nRF";
+char* csr_string = "";
+
+
 const uint8_t root_ca_cert_der[] = {
   
 };
@@ -11,20 +15,29 @@ const uint8_t root_ca_cert_der[] = {
 
 void generate_key_pair() 
 {
+    ret_code_t err_code;
+
     // ECC key pair 
-    nrf_crypto_ecc_key_pair_generate(
-        NULL,
-        &g_nrf_crypto_ecc_secp256r1_curve_info,
+    nrf_crypto_ecc_key_pair_generate_context_t keygen_context;
+    const nrf_crypto_ecc_curve_info_t* p_curve_info = &g_nrf_crypto_ecc_secp256r1_curve_info;
+
+    err_code = nrf_crypto_ecc_key_pair_generate(
+        &keygen_context,
+        p_curve_info, 
         &private_key,
         &public_key
     );
 
 } 
 
-void generate_csr(char* csr_string, const char* common_name, nrf_crypto_ecc_public_key_t* public_key) 
+void generate_csr(char* csr_string) 
 {
+    generate_key_pair();
     // form CSR in PEM format 
     uint16_t bytes_to_send; 
+
+    
+    printf("-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n", common_name, public_key);
 
     bytes_to_send = sprintf(csr_string,
                             "-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n",

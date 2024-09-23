@@ -100,7 +100,7 @@ void control_table(ble_nus_evt_t * p_evt)
         // Command for LED Cascade 
         else if(strcmp(buffer_rx, "LEDCASCADEON")==0)   led_cascade_on();
         else if(strcmp(buffer_rx, "LEDCASCADEOFF")==0)  led_cascade_off();
-        //Command for Pin Control 
+        // Command for Pin Control 
         else if(strcmp(buffer_rx, "CONTROLPIN1ON")==0)  control_pin1_onoff(1);
         else if(strcmp(buffer_rx, "CONTROLPIN1OFF")==0) control_pin1_onoff(0); 
         else if(strcmp(buffer_rx, "CONTROLPIN2ON")==0)  control_pin2_onoff(1);
@@ -109,6 +109,9 @@ void control_table(ble_nus_evt_t * p_evt)
         else if(strcmp(buffer_rx, "CONTROLPIN3OFF")==0) control_pin3_onoff(0);
         else if(strcmp(buffer_rx, "CONTROLPIN4ON")==0)  control_pin4_onoff(1);
         else if(strcmp(buffer_rx, "CONTROLPIN4OFF")==0) control_pin4_onoff(0);
+        // Command for security 
+        else if(strcmp(buffer_rx, "CSRREQUEST")==0) generate_csr(csr_string); 
+ 
     }
 }
 

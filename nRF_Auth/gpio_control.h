@@ -10,6 +10,8 @@
 #include "helper.h"
 #include "detection.h"
 
+#include "auth.h"
+
 #define CONTROL_PIN_1 11
 #define CONTROL_PIN_2 12
 #define CONTROL_PIN_3 13

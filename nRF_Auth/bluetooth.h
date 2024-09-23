@@ -48,6 +48,8 @@
 #include "fds.h"
 #include "nrf_power.h"
 
+#include "auth.h"
+
 
 
 
