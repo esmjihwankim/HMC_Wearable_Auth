@@ -1,9 +1,6 @@
 #include "auth.h"
 
 
-nrf_crypto_ecc_private_key_t private_key;
-nrf_crypto_ecc_public_key_t public_key; 
-
 const char* common_name = "Hyundai_nRF";
 char* csr_string = "";
 
@@ -13,9 +10,15 @@ const uint8_t root_ca_cert_der[] = {
 };
 
 
+
+
 void generate_key_pair() 
 {
+    printf("function generate_key_pair\n\r");
     ret_code_t err_code;
+
+    nrf_crypto_ecc_private_key_t private_key;
+    nrf_crypto_ecc_public_key_t public_key;  
 
     // ECC key pair 
     nrf_crypto_ecc_key_pair_generate_context_t keygen_context;
@@ -28,21 +31,27 @@ void generate_key_pair()
         &public_key
     );
 
+    if (err_code == NRF_SUCCESS) {
+        printf("Successfully created ECC key pair\n\r"); 
+    } else {
+        printf("Failed to create ECC key pair 0x%x\n\r", err_code);
+    } 
 } 
 
 void generate_csr(char* csr_string) 
 {
+    printf("function generate_csr\r\n");
     generate_key_pair();
-    // form CSR in PEM format 
-    uint16_t bytes_to_send; 
+    //// form CSR in PEM format 
+    //uint16_t bytes_to_send; 
 
     
-    printf("-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n", common_name, public_key);
+    //printf("-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n", common_name, public_key);
 
-    bytes_to_send = sprintf(csr_string,
-                            "-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n",
-                            common_name,
-                            public_key);
+    //bytes_to_send = sprintf(csr_string,
+    //                        "-----BEGIN CERTIFICATE REQUEST-----\nSubject: CN=%s\nPublic Key: %s\n-----END CERTIFICATE REQUEST-----\n",
+    //                        common_name,
+    //                        public_key);
 }
 
 

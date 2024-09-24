@@ -17,6 +17,7 @@ int main(void)
     uart_init();
     lfclk_config();
     timers_init();
+    nrf_crypto_init();
     //buttons_leds_init(&erase_bonds);
     ble_stack_init();
     gap_params_init();

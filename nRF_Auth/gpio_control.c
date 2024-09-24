@@ -63,7 +63,7 @@ void control_pin4_onoff(int onoff)
 void control_table(ble_nus_evt_t * p_evt)
 {
     int idx = 0;
-    char buffer_rx[20] = "";
+    char buffer_rx[1000] = "";
     if (p_evt->type == BLE_NUS_EVT_RX_DATA)
     {
         uint32_t err_code;
@@ -110,8 +110,7 @@ void control_table(ble_nus_evt_t * p_evt)
         else if(strcmp(buffer_rx, "CONTROLPIN4ON")==0)  control_pin4_onoff(1);
         else if(strcmp(buffer_rx, "CONTROLPIN4OFF")==0) control_pin4_onoff(0);
         // Command for security 
-        else if(strcmp(buffer_rx, "CSRREQUEST")==0) generate_csr(csr_string); 
- 
+        else if(strcmp(buffer_rx, "CREATECSR")==0) generate_csr(csr_string); 
     }
 }
 
