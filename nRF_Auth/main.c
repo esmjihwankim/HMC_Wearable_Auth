@@ -48,11 +48,6 @@ int main(void)
     } else {
         printf("RNG Test Failed. Error code: 0x%x", err_code);
     }
-    
-    generate_key_pair();
-    
-
-
 
     // Enter main loop.
     for (;;)

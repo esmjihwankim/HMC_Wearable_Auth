@@ -59,12 +59,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="38" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="27" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../bluetooth.h" selected="0" top="66" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="17" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../auth.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="14" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../auth.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../bluetooth.c" selected="0" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="136" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../auth.c" selected="1" top="114" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="216" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/My_Projects/HMC_Wearable_Auth/nRF_Auth/auth.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/crypto/nrf_crypto_ecc.c" selected="0" top="199" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="380" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/My_Projects/HMC_Wearable_Auth/nRF_Auth/auth.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/crypto/nrf_crypto_ecc.h" selected="0" top="364" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="233" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/components/libraries/crypto/nrf_crypto_ecc.h" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecc.h" selected="0" top="216" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../auth.h" selected="0" top="0" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_uart_pca10040_s132" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Nordic/nRF5_SDK_17.0.2_d674dde/examples/Won_nRF/BSPWon_nRF52" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="ble_app_uart_pca10040_s132" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Nordic/nRF5_SDK_17.0.2_d674dde/examples/Won_nRF/BSPWon_nRF52" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
