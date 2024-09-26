@@ -14,7 +14,10 @@
   <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040"/>
   <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040"/>
   <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;Application"/>
-  <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;nRF_Crypto"/>
+  <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;nRF_Drivers"/>
+  <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;nRF_Libraries"/>
+  <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;nRF_micro-ecc"/>
+  <ProjectSessionItem path="nrf_crypto_ecdsa_pca10040;nrf_crypto_ecdsa_pca10040;nRF_TLS"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -39,23 +42,16 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="220" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="185" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="80" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/MYPROJECTS/HMC_Wearable_Auth/nRF_Crypto/key_gen_test/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_init.c" selected="0" top="55" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="16" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/components/libraries/crypto/nrf_crypto_init.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_init.h" selected="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="903" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/MYPROJECTS/HMC_Wearable_Auth/nRF_Crypto/key_gen_test/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_ecc.c" selected="0" top="880" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="378" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/MYPROJECTS/HMC_Wearable_Auth/nRF_Crypto/key_gen_test/main.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_ecc.h" selected="0" top="362" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="108" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_rng.c" selected="0" top="91" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/components/libraries/crypto/nrf_crypto_rng.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/nrf_crypto_rng.h" selected="0" top="51" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="24" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/components/libraries/crypto/nrf_crypto_rng.c" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/stack_info/nrf_stack_info.h" selected="0" top="7" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="45" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecc.c" selected="0" top="24" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecdh.c" selected="0" top="90" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="111" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecdsa.c" selected="0" top="93" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="110" useTextEdit="1" openedFrom="D:/Github Repo/nRF5_SDK_17.1.0/components/libraries/crypto/nrf_crypto_ecc.h" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_ecc.h" selected="0" top="93" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="560" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="1" top="595" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="217" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecc.h" selected="0" top="204" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_ecc.c" selected="0" top="99" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c" selected="0" top="78" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="33" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="145" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng_mbedtls.c" selected="0" top="128" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="551" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng_mbedtls.c" useBinaryEdit="0" left="0" path="../../../../../../../external/mbedtls/library/ctr_drbg.c" selected="0" top="534" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../components/libraries/mem_manager/mem_manager.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="49" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="32" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../external/mbedtls/library/entropy.c" selected="0" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="72" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/external/mbedtls/library/entropy_poll.c" useBinaryEdit="0" left="0" path="../../../../../../../external/mbedtls/include/mbedtls/entropy_poll.h" selected="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/external/mbedtls/library/entropy_poll.c" useBinaryEdit="0" left="0" path="../../../../../../../external/mbedtls/include/mbedtls/entropy.h" selected="0" top="36" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="D:/Git Repo/nRF5_SDK_17.1.0/external/mbedtls/library/entropy_poll.c" useBinaryEdit="0" left="0" path="../../../../../../../external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h" selected="1" top="21" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="54" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../../external/mbedtls/library/entropy_poll.c" selected="0" top="41" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="nrf_crypto_ecdsa_pca10040" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="nrf_crypto_ecdsa_pca10040" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
