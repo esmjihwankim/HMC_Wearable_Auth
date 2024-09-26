@@ -15,7 +15,7 @@ extern char* csr_string;
 
 void generate_csr(char* csr_string); 
 ret_code_t verify_signed_certificate(const uint8_t* signed_cert, size_t signed_cert_len, const uint8_t* signature, size_t sig_len);
-
+void generate_key_pair();
 
 
 #endif

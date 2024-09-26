@@ -5,6 +5,6 @@
 /* custom headers */
 #include "bluetooth.h"
 #include "gpio_control.h"
-
+#include "auth.h" 
 
 #endif
